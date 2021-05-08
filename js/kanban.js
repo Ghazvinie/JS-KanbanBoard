@@ -31,8 +31,8 @@ const create_item = () => {
     return e.dataTransfer.clearData();
   });
 
-  let input = createElement('input');
-  item.append(input);
+  let input = document.createElement('input');
+  item.appendChild(input);
 
   let save_btn = createElement('button');
   save_btn.innerHTML = 'Save';
