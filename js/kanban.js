@@ -26,6 +26,13 @@ const create_item = () => {
   item.addEventListener('dragstart', (e) => {
     return e.dataTransfer.setData('text', e.target.id);
   });
+
+  item.addEventListener('dragend', (e) => {
+    return e.dataTransfer.clearData();
+  });
+
+  let input = createElement('input');
+
 };
 
 document.querySelectorAll('.drop').forEach(element => {
