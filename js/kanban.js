@@ -32,6 +32,10 @@ const create_item = () => {
   });
 
   let input = createElement('input');
+  item.append(input);
+
+  let save_btn = createElement('button');
+  save_btn.innerHTML = 'Save';
 
 };
 
