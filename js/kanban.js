@@ -34,7 +34,7 @@ const create_item = () => {
   let input = document.createElement('input');
   item.appendChild(input);
 
-  let save_btn = createElement('button');
+  let save_btn = document.createElement('button');
   save_btn.innerHTML = 'Save';
 
 };
